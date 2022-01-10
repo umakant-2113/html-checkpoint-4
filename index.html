@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,13 +17,15 @@
       @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
   </head>
-  <body>
-    <header>
-      <div class="container justify-between flex">
+  <body id="top">
+    <header class="header">
+      <div class="container justify-between flex align-center">
         <div class="flex-40">
           <h2 class="brand sm-brand"><a href="#">Flexor</a></h2>
         </div>
-        <label class="sm-bars" for="toggle"><i class="fas fa-bars"> </i></label>
+        <label class="sm-bars bars" for="toggle"
+          ><i class="fas fa-bars"> </i
+        ></label>
 
         <input id="toggle" type="checkbox" />
 
@@ -88,10 +90,10 @@
       </div>
     </header>
     <main>
-      <section class="hero-section">
-        <div class="container flex-start h-section sm-flex-48">
-          <div>
-            <h1>welcome to flexor</h1>
+      <section class="hero-section sm-hero-section msm-hero-section">
+        <div class="container flex-start h-section sm-flex-48 sm-relative">
+          <div class="sm-h1-div">
+            <h1 >welcome to flexor</h1>
             <p>
               We are team of to talanted designers making websiteses with
               Bootstrap
@@ -104,38 +106,45 @@
             </nav>
           </div>
         </div>
-        <!-- section two about start  -->
-        <div
-          class="container flex justify-between about-section section2 sm-wrap"
-        >
-          <div class="flex-30 section2-div sm-flex-100">
+        <!-- section two  start  -->
+        <section class="about-section  sm-relative msm-relative">
+        <div class="container flex justify-between  sm-wrap sm-absolute msm-absolute">
+          <div class="flex-30 about-article sm-flex-100 ">
             <h2>why choose flexor for your company websites?</h2>
-            <p>
+            <p class="about-p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
               dolorum minima eligendi. Obcaecati tempore iure quasi odio
-              accusamus assumenda, labore officiis similique adipisci, eum in,
-              voluptas laboriosam illum explicabo deserunt!
+              accusamus assumenda, labore officiis similique adipisci,
             </p>
             <button class="section2-btn"><a href="#"> Learn More ></a></button>
           </div>
-          <div class="flex-20 text-center section2-div2 sm-flex-100">
-            <a href="#"> <i class="fas fa-book"></i></a>
+          <div class="flex-20 about-article2 sm-flex-100 sm-relative">
+            <nav class="text-center about-nav">
+              <a href="#"> <i class="fas fa-book"></i></a>
+            </nav>
+            
             <h2>corporis voluptates sit</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
               tenetur et quibusdam
             </p>
           </div>
-          <div class="flex-20 text-center section2-div2 sm-flex-10">
-            <a href="#"><i class="fas fa-dice-d6"></i> </a>
+          <div class="flex-20 about-article2 sm-flex-100">
+            <nav class="text-center">
+              <a href="#"><i class="fas fa-dice-d6"></i> </a>
+            </nav>
+           
             <h2>ullmaco laboris ladore pan</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
               adipisci
             </p>
           </div>
-          <div class="flex-20 text-center section2-div2 sm-flex-100">
-            <a href="#"> <i class="fas fa-clipboard"></i></a>
+          <div class="flex-20 about-article2 sm-flex-100">
+            <nav class="text-center">
+              <a href="#"> <i class="fas fa-clipboard"></i></a>
+            </nav>
+         
             <h2>labore consequetor</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
@@ -146,9 +155,10 @@
       </section>
 
       <!-- section about  start  -->
-      <section class="section-3" id="about">
-        <div class="container flex justify-between sm-wrap">
-          <div class="flex-40 sm-flex-100">
+
+      <section class="section-3 sm-about msm-about sm-about " id="about" >
+        <div class="container flex justify-between sm-wrap ">
+          <div class="flex-40 sm-flex-100 ">
             <figure>
               <img
                 class="full-width"
@@ -169,9 +179,9 @@
               minima!voluptatum vel cumque assumenda neque id fugit dolor sunt
               minima!
             </p>
-            <div class="flex">
+            <div class="flex section3-div">
               <div class="section3-icon">
-                <a href="#"> <i class="fas fa-fingerprint"></i></a>
+                <a class="section3-a" href="#"> <i class="fas fa-fingerprint"></i></a>
               </div>
               <div>
                 <h4 class="section3-h4">lorem ipsum</h4>
@@ -182,9 +192,9 @@
                 </p>
               </div>
             </div>
-            <div class="flex">
+            <div class="flex section3-div">
               <div class="section3-icon">
-                <a href="#"> <i class="fas fa-trash"></i></a>
+                <a class="section3-a" href="#"> <i class="fas fa-trash"></i></a>
               </div>
               <div>
                 <h4 class="section3-h4">lorem ipsum</h4>
@@ -195,9 +205,9 @@
                 </p>
               </div>
             </div>
-            <div class="flex">
+            <div class="flex section3-div">
               <div class="section3-icon">
-                <a href="#"> <i class="fab fa-react"></i></a>
+                <a class="section3-a" href="#"> <i class="fab fa-react"></i></a>
               </div>
               <div>
                 <h4 class="section3-h4">lorem ipsum</h4>
@@ -211,7 +221,9 @@
           </div>
         </div>
       </section>
+
       <!-- section four start -->
+
       <section class="section-4">
         <div class="container flex overflow align-center">
           <div class="flex-23 client">
@@ -288,7 +300,9 @@
           </div>
         </div>
       </section>
+
       <!-- service section start -->
+
       <section class="service-section" id="service">
         <article class="container text-center">
           <h3 class="service-h3">Service</h3>
@@ -298,9 +312,9 @@
             unde quasi consectetur provident magni? Ipsa in voluptatem expedita
             vel cumque ut quo corporis!
           </p>
-          <div class="flex justify-between wrap sm-wrap">
+          <div class="flex justify-between wrap sm-wrap msize-wrap">
             <article
-              class="flex-30 text-center margin-top service-article sm-flex-48"
+              class="flex-30 text-center service-article sm-flex-47 m-size-flex-100"
             >
               <nav class="service-nav">
                 <a class="service-a" href="#"> <i class="fas fa-tv"></i></a>
@@ -314,7 +328,7 @@
               </p>
             </article>
             <article
-              class="flex-30 text-center margin-top service-article sm-flex-48"
+              class="flex-30 text-center service-article sm-flex-47 m-size-flex-100"
             >
               <nav class="service-nav">
                 <a class="service-a" href="#"> <i class="fas fa-tv"></i></a>
@@ -327,7 +341,7 @@
               </p>
             </article>
             <article
-              class="flex-30 text-center margin-top service-article sm-flex-48"
+              class="flex-30 text-center  service-article sm-flex-47 m-size-flex-100"
             >
               <nav class="service-nav">
                 <a class="service-a" href="#"> <i class="fas fa-tv"></i></a>
@@ -339,7 +353,7 @@
                 pariatur
               </p>
             </article>
-            <article class="flex-30 text-center service-article sm-flex-48">
+            <article class="flex-30 text-center service-article sm-flex-47 m-size-flex-100">
               <nav class="service-nav">
                 <a class="service-a" href="#"> <i class="fas fa-tv"></i></a>
               </nav>
@@ -350,7 +364,7 @@
                 pariatur
               </p>
             </article>
-            <article class="flex-30 text-center service-article sm-flex-48">
+            <article class="flex-30 text-center service-article sm-flex-47 m-size-flex-100">
               <nav class="service-nav">
                 <a class="service-a" href="#"> <i class="fas fa-tv"></i></a>
               </nav>
@@ -361,9 +375,9 @@
                 pariatur
               </p>
             </article>
-            <article class="flex-30 text-center service-article sm-flex-48">
-              <nav>
-                <a class="service-nav" href="#">
+            <article class="flex-30 text-center service-article sm-flex-47 m-size-flex-100">
+              <nav class="service-nav">
+                <a class="service-a" href="#">
                   <i class="fas fa-calendar-minus"></i
                 ></a>
               </nav>
@@ -377,7 +391,9 @@
           </div>
         </article>
       </section>
-      <!-- section start  -->
+
+      <!-- section cllient  start  -->
+
       <section class="section-5">
         <div
           class="container flex justify-between wrap section5-img-box sm-wrap"
@@ -390,20 +406,20 @@
                 alt="value"
               />
             </figure>
-            <article class="section5-article">
+            <article class="section5-article sm-section5-article">
               <h3>our mission</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestias suscipit voluptate sed minus fugiat incidunt
               </p>
               <button class="section5-btn">
-                <a href="#">
+                <a class="section5-a" href="#">
                   <i class="fas fa-long-arrow-alt-right"></i> Read More</a
                 >
               </button>
             </article>
           </div>
-          <div class="flex-48 section5-img sm-flex-100">
+          <div class="flex-48 section5-img sm-flex-100 m-margin">
             <figure>
               <img
                 class="full-width"
@@ -411,20 +427,20 @@
                 alt="value"
               />
             </figure>
-            <article class="section5-article">
+            <article class="section5-article sm-section5-article">
               <h3>our plan</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestias repellat amet incidunt at veritatis eius autem
               </p>
               <button class="section5-btn">
-                <a href="#">
+                <a class="section5-a" href="#">
                   <i class="fas fa-long-arrow-alt-right"></i> Read More</a
                 >
               </button>
             </article>
           </div>
-          <div class="flex-48 section5-img sm-flex-100">
+          <div class="flex-48 section5-img sm-flex-100 m-margin">
             <figure>
               <img
                 class="full-width"
@@ -432,20 +448,20 @@
                 alt="value"
               />
             </figure>
-            <article class="section5-article">
+            <article class="section5-article sm-section5-article">
               <h3>our vision</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
                 sequi tempora quae consequuntur alias perspiciatis
               </p>
               <button class="section5-btn">
-                <a href="#">
+                <a class="section5-a" href="#">
                   <i class="fas fa-long-arrow-alt-right"></i> Read More</a
                 >
               </button>
             </article>
           </div>
-          <div class="flex-48 section5-img sm-flex-100">
+          <div class="flex-48 section5-img sm-flex-100 m-margin">
             <figure>
               <img
                 class="full-width"
@@ -453,14 +469,14 @@
                 alt="value"
               />
             </figure>
-            <article class="section5-article">
+            <article class="section5-article sm-section5-article  ">
               <h3>our care</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Recusandae commodi alias fugiat voluptates qui, praesentium
               </p>
               <button class="section5-btn">
-                <a href="#">
+                <a class="section5-a" href="#">
                   <i class="fas fa-long-arrow-alt-right"></i> Read More</a
                 >
               </button>
@@ -469,8 +485,32 @@
         </div>
       </section>
       <!-- section six start  -->
-      <section class="section-6">
-        <div></div>
+      <section class="section-6 sm-section6 msm-full-width">
+        <div class="container section6-div">
+          <figure class="center">
+            <img
+              class="section6-image-box"
+              src="./media/testimonia/testimonials-3.jpg"
+              alt="testimonia"
+            />
+          </figure>
+          <article class="text-center section6-article">
+            <cite class="section6-cite">Jena carlis</cite>
+            <p class="section6-p">Store Owner</p>
+            <blockquote class="section6-blockquote">
+              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              praesentium impedit facere minima qui! Dicta nemo repellendus
+              ipsum, porro sint sit quaerat "
+            </blockquote>
+            <div class="flex justify-center">
+              <div class="section6-cricle"></div>
+              <div class="section6-cricle"></div>
+              <div class="section6-cricle section6-active"></div>
+              <div class="section6-cricle"></div>
+              <div class="section6-cricle"></div>
+            </div>
+          </article>
+        </div>
       </section>
       <!-- section portfolio start  -->
       <section class="section7" id="portfolio">
@@ -482,100 +522,204 @@
             temporibusat iusto eos quas est dolorum. Doloremque, soluta
             temporibusdolorum. Doloremque, soluta temporibus
           </p>
-          <div class="flex justify-center portfolio align-center">
-            <div class="portfolio-hading">
-              <h5 class="portfolio-active">
-                <a href="#">ALL</a>
-              </h5>
-            </div>
-            <div><h5>APP</h5></div>
-            <div><h5>CARD</h5></div>
-            <div><h5>WEB</h5></div>
-          </div>
-          <div class="flex justify-between wrap sm-wrap">
-            <div class="flex-30 portfolio-image-box sm-flex-48">
-              <figure>
-                <img
-                  class="full-width"
-                  src="./media/potfolio/portfolio-1.jpg"
-                  alt="portfolio"
-                />
-              </figure>
-            </div>
-            <div class="flex-30 portfolio-image-box sm-flex-48">
-              <figure>
-                <img
-                  class="full-width"
-                  src="./media/potfolio/portfolio-2.jpg"
-                  alt="portfolio"
-                />
-              </figure>
-            </div>
-            <div class="flex-30 portfolio-image-box sm-flex-48">
-              <figure>
-                <img
-                  class="full-width"
-                  src="./media/potfolio/portfolio-3.jpg"
-                  alt="portfolio"
-                />
-              </figure>
-            </div>
-            <div class="flex-30 portfolio-image-box sm-flex-48">
-              <figure>
-                <img
-                  class="full-width"
-                  src="./media/potfolio/portfolio-4.jpg"
-                  alt="portfolio"
-                />
-              </figure>
-            </div>
-            <div class="flex-30 portfolio-image-box sm-flex-48">
-              <figure>
-                <img
-                  class="full-width"
-                  src="./media/potfolio/portfolio-5.jpg"
-                  alt="portfolio"
-                />
-              </figure>
-            </div>
-            <div class="flex-30 portfolio-image-box sm-flex-48">
-              <figure>
-                <img
-                  class="full-width"
-                  src="./media/potfolio/portfolio-6.jpg"
-                  alt="portfolio"
-                />
-              </figure>
-            </div>
-            <div class="flex-30 portfolio-image-box sm-flex-48">
-              <figure>
-                <img
-                  class="full-width"
-                  src="./media/potfolio/portfolio-7.jpg"
-                  alt="portfolio"
-                />
-              </figure>
-            </div>
-            <div class="flex-30 portfolio-image-box sm-flex-48">
-              <figure>
-                <img
-                  class="full-width"
-                  src="./media/potfolio/portfolio-8.jpg"
-                  alt="portfolio"
-                />
-              </figure>
-            </div>
-            <div class="flex-30 portfolio-image-box sm-flex-48">
-              <figure>
-                <img
-                  class="full-width"
-                  src="./media/potfolio/portfolio-9.jpg"
-                  alt="portfolio"
-                />
-              </figure>
-            </div>
+          <div class="portfolio-div sm-wrap ">
+            <a class="portfolio-active" href="#">ALL</a>
+            <a href="#">APP</a>
+            <a href="#">CARD</a>
+            <a href="#">WEB</a>
           </div>
         </article>
+        <div class="container flex justify-between wrap sm-wrap msize-wrap">
+          <div class="flex-30 portfolio-h3 sm-flex-48 m-size-flex-100">
+            <figure>
+              <img
+                class="full-width m-portfolio-img sm-portfolio-img"
+                src="./media/potfolio/portfolio-1.jpg"
+                alt="portfolio"
+              />
+            </figure>
+            <div class="portfolio-hading">
+              <div class="flex justify-between align-center">
+                <h3 class="card3">Card3</h3>
+                <nav>
+                  <a href="#"><i class="fas fa-plus"></i></a>
+                  <a href="#"><i class="fas fa-link"></i></a>
+                </nav>
+              </div>
+              <div>
+                <h5 class="card">Card</h5>
+              </div>
+            </div>
+          </div>
+          <div class="flex-30 portfolio-h3 sm-flex-48 m-size-flex-100">
+            <figure>
+              <img
+                class="full-width m-portfolio-img sm-portfolio-img"
+                src="./media/potfolio/portfolio-9.jpg"
+                alt="portfolio"
+              />
+            </figure>
+            <div class="portfolio-hading">
+              <div class="flex justify-between align-center">
+                <h3 class="card3">Card3</h3>
+                <nav>
+                  <a href="#"><i class="fas fa-plus"></i></a>
+                  <a href="#"><i class="fas fa-link"></i></a>
+                </nav>
+              </div>
+              <div>
+                <h5 class="card">Card</h5>
+              </div>
+            </div>
+          </div>
+          <div class="flex-30 portfolio-h3 sm-flex-48 m-size-flex-100">
+            <figure>
+              <img
+                class="full-width m-portfolio-img sm-portfolio-img"
+                src="./media/potfolio/portfolio-2.jpg"
+                alt="portfolio"
+              />
+            </figure>
+            <div class="portfolio-hading">
+              <div class="flex justify-between align-center">
+                <h3 class="card3">Card3</h3>
+                <nav>
+                  <a href="#"><i class="fas fa-plus"></i></a>
+                  <a href="#"><i class="fas fa-link"></i></a>
+                </nav>
+              </div>
+              <div>
+                <h5 class="card">Card</h5>
+              </div>
+            </div>
+          </div>
+          <div class="flex-30 portfolio-h3 sm-flex-48 m-size-flex-100">
+            <figure>
+              <img
+                class="full-width m-portfolio-img sm-portfolio-img"
+                src="./media/potfolio/portfolio-3.jpg"
+                alt="portfolio"
+              />
+            </figure>
+            <div class="portfolio-hading">
+              <div class="flex justify-between align-center">
+                <h3 class="card3">Card3</h3>
+                <nav>
+                  <a href="#"><i class="fas fa-plus"></i></a>
+                  <a href="#"><i class="fas fa-link"></i></a>
+                </nav>
+              </div>
+              <div>
+                <h5 class="card">Card</h5>
+              </div>
+            </div>
+          </div>
+          <div class="flex-30 portfolio-h3 sm-flex-48 m-size-flex-100">
+            <figure>
+              <img
+                class="full-width m-portfolio-img sm-portfolio-img"
+                src="./media/potfolio/portfolio-4.jpg"
+                alt="portfolio"
+              />
+              <div class="portfolio-hading">
+                <div class="flex justify-between align-center">
+                  <h3 class="card3">Card3</h3>
+                  <nav>
+                    <a href="#"><i class="fas fa-plus"></i></a>
+                    <a href="#"><i class="fas fa-link"></i></a>
+                  </nav>
+                </div>
+                <div>
+                  <h5 class="card">Card</h5>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <div class="flex-30 portfolio-h3 sm-flex-48 m-size-flex-100">
+            <figure>
+              <img
+                class="full-width m-portfolio-img sm-portfolio-img"
+                src="./media/potfolio/portfolio-5.jpg"
+                alt="portfolio"
+              />
+            </figure>
+            <div class="portfolio-hading">
+              <div class="flex justify-between align-center">
+                <h3 class="card3">Card3</h3>
+                <nav>
+                  <a href="#"><i class="fas fa-plus"></i></a>
+                  <a href="#"><i class="fas fa-link"></i></a>
+                </nav>
+              </div>
+              <div>
+                <h5 class="card">Card3</h5>
+              </div>
+            </div>
+          </div>
+          <div class="flex-30 portfolio-h3 sm-flex-48 m-size-flex-100">
+            <figure>
+              <img
+                class="full-width m-portfolio-img sm-portfolio-img"
+                src="./media/potfolio/portfolio-6.jpg"
+                alt="portfolio"
+              />
+            </figure>
+            <div class="portfolio-hading">
+              <div class="flex justify-between align-center">
+                <h3 class="card3">Card3</h3>
+                <nav>
+                  <a href="#"><i class="fas fa-plus"></i></a>
+                  <a href="#"><i class="fas fa-link"></i></a>
+                </nav>
+              </div>
+              <div>
+                <h5 class="card">Card</h5>
+              </div>
+            </div>
+          </div>
+          <div class="flex-30 portfolio-h3 sm-flex-48 m-size-flex-100">
+            <figure>
+              <img
+                class="full-width m-portfolio-img sm-portfolio-img"
+                src="./media/potfolio/portfolio-7.jpg"
+                alt="portfolio"
+              />
+              <div class="portfolio-hading">
+                <div class="flex justify-between align-center">
+                  <h3 class="card3">Card3</h3>
+                  <nav>
+                    <a href="#"><i class="fas fa-plus"></i></a>
+                    <a href="#"><i class="fas fa-link"></i></a>
+                  </nav>
+                </div>
+                <div>
+                  <h5 class="card">Card</h5>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <div class="flex-30 portfolio-h3 sm-flex-48 m-size-flex-100">
+            <figure>
+              <img
+                class="full-width m-portfolio-img sm-portfolio-img"
+                src="./media/potfolio/portfolio-8.jpg "
+                alt="portfolio"
+              />
+            </figure>
+            <div class="portfolio-hading">
+              <div class="flex justify-between align-center">
+                <h3 class="card3">Card3</h3>
+                <nav>
+                  <a href="#"><i class="fas fa-plus"></i></a>
+                  <a href="#"><i class="fas fa-link"></i></a>
+                </nav>
+              </div>
+              <div>
+                <h5 class="card">Card</h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- section team start -->
       <section class="section-team" id="team">
@@ -588,11 +732,11 @@
             dolorem optio? Molestias, reiciendis.
           </p>
 
-          <div class="flex justify-between team-image-box sm-wrap">
-            <div class="flex-23 sm-flex-48">
+          <div class="flex justify-between team-image-box sm-wrap msize-wrap">
+            <div class="flex-23 team-item sm-flex-48 m-size-flex-100">
               <figure>
                 <img
-                  class="full-width"
+                  class="full-width m-portfolio-img"
                   src="./media/team/team-1.jpg"
                   alt="team"
                 />
@@ -603,14 +747,15 @@
                 <a class="hide" href="#"><i class="fab fa-instagram"></i></a>
                 <a class="hide" href="#"><i class="fab fa-linkedin-in"></i></a>
               </nav>
-
+              <div class="member">
               <h4>walter white</h4>
-              <small> cheif executive officer</small>
+              <h5> cheif executive officer</h5>
+              </div>
             </div>
-            <div class="flex-23 sm-flex-48">
+            <div class="flex-23 team-item sm-flex-48 m-size-flex-100">
               <figure>
                 <img
-                  class="full-width"
+                  class="full-width m-portfolio-img"
                   src="./media/team/team-2.jpg"
                   alt="team"
                 />
@@ -621,14 +766,17 @@
                 <a class="hide" href="#"><i class="fab fa-instagram"></i></a>
                 <a class="hide" href="#"><i class="fab fa-linkedin-in"></i></a>
               </nav>
+              <div class="member">
 
               <h4>sarah jhonson</h4>
               <h5>product manager</h5>
+              </div>
+
             </div>
-            <div class="flex-23 sm-flex-48">
+            <div class="flex-23 team-item sm-flex-48 m-size-flex-100">
               <figure>
                 <img
-                  class="full-width"
+                  class="full-width m-portfolio-img"
                   src="./media/team/team-3.jpg"
                   alt="team"
                 />
@@ -639,13 +787,15 @@
                 <a class="hide" href="#"><i class="fab fa-instagram"></i></a>
                 <a class="hide" href="#"><i class="fab fa-linkedin-in"></i></a>
               </nav>
+              <div class="member">
               <h4>william anderson</h4>
-              <small> CTO</small>
+              <h5> CTO</h5>
+              </div>
             </div>
-            <div class="flex-23 sm-flex-48">
+            <div class="flex-23 team-item sm-flex-48 m-size-flex-100">
               <figure>
                 <img
-                  class="full-width"
+                  class="full-width m-portfolio-img"
                   src="./media/team/team-4.jpg"
                   alt="team"
                 />
@@ -656,8 +806,10 @@
                 <a class="hide" href="#"><i class="fab fa-instagram"></i></a>
                 <a class="hide" href="#"><i class="fab fa-linkedin-in"></i></a>
               </nav>
+              <div class="member">
               <h4>amanda japson</h4>
-              <small> accountant</small>
+              <h5> accountant<h5>
+              </div>
             </div>
           </div>
         </article>
@@ -672,8 +824,8 @@
             repellat optio maiores natus eius, architecto repudiandae doloremque
             temporibus sed possimus? Et!
           </p>
-          <div class="flex justify-between sm-wrap">
-            <div class="flex-23 pricing-box sm-flex-46">
+          <div class="flex justify-between sm-wrap msize-wrap">
+            <div class="flex-23 pricing-box sm-flex-46 m-size-flex-100">
               <h5>free</h5>
               <h4>
                 <span>$</span> <strong class="pricing-strong">0</strong>/month
@@ -687,7 +839,7 @@
               </ul>
               <button class="btn btn2"><a href="#">Buy Now</a></button>
             </div>
-            <div class="flex-23 pricing-box sm-flex-46">
+            <div class="flex-23 pricing-box sm-flex-46 m-size-flex-100">
               <h5 class="pricing-active">bussiness</h5>
               <h4>
                 <span>$</span>
@@ -702,7 +854,7 @@
               </ul>
               <button class="btn btn2"><a href="#">Buy Now</a></button>
             </div>
-            <div class="flex-23 pricing-box sm-flex-46">
+            <div class="flex-23 pricing-box sm-flex-46 m-size-flex-100">
               <h5>developer</h5>
               <h4>
                 <span>$</span>
@@ -717,7 +869,7 @@
               </ul>
               <button class="btn btn2"><a href="#">Buy Now</a></button>
             </div>
-            <div class="flex-23 pricing-box sm-flex-46">
+            <div class="flex-23 pricing-box sm-flex-46 m-size-flex-100">
               <h5>ultimate</h5>
               <h4>
                 <span>$</span>
@@ -747,13 +899,15 @@
               officiis saepe quod doloribus!
             </p>
           </div>
+         
           <div class="flex justify-between faq-article align-center">
-            <div>
-              <h5 class="faq-h5">
-                <small class="faq-small">?</small>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              </h5>
-
+          <div>
+            <div class="flex">
+              <small class="faq-small">?</small>
+              <h4 class="faq-hading">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
+             
+              </div>
+              
               <p class="faq-p">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Ducimus explicabo soluta eaque vel, similique fugit eius! Facere
@@ -761,10 +915,6 @@
                 ipsum maxime culpa temporibus?
               </p>
             </div>
-
-            <nav>
-              <a href="#"> <i class="fas fa-angle-up"></i></a>
-            </nav>
           </div>
 
           <div class="flex justify-between faq-article align-center">
@@ -812,7 +962,7 @@
           </div>
         </div>
       </section>
-      <!--  -->
+      <!--contect section start  -->
       <section class="contect-section" id="contect">
         <div class="container contect">
           <article class="text-center">
@@ -826,18 +976,18 @@
           </article>
           <div class="flex justify-between sm-wrap">
             <div class="flex-30 contect-box flex sm-flex-100">
-              <div>
+              <nav class="contect-nav">
                 <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-              </div>
+              </nav>
               <address>
                 <h4>our address</h4>
                 <cite> A 108 adam streen new york, NY 535022 </cite>
               </address>
             </div>
             <div class="flex-30 contect-box flex sm-flex-100">
-              <div>
+              <nav class="contect-nav">
                 <a href="#"><i class="fas fa-envelope"></i></a>
-              </div>
+              </nav>
               <div>
                 <h4>email Us</h4>
                 <mail class="mail">info@emaple .com</mail>
@@ -845,9 +995,9 @@
               </div>
             </div>
             <div class="flex-30 contect-box flex sm-flex-100">
-              <div>
+              <nav class="contect-nav">
                 <a href="#"><i class="fas fa-phone-volume"></i></a>
-              </div>
+              </nav>
               <div>
                 <div>
                   <h4>call us</h4>
@@ -894,13 +1044,13 @@
           </form>
         </div>
       </section>
-    </main>
+    
     <!-- footer start -->
-    <footer>
+   <footer>
       <div class="footer">
-        <div class="container flex justify-between sm-wrap">
-          <div class="flex-30 sm-flex-48">
-            <h4>Flexor</h4>
+        <div class="container flex justify-between sm-wrap msize-wrap">
+          <div class="flex-30 sm-flex-48 m-size-flex-100 m-margin">
+            <h4 class="footer-h4">Flexor</h4>
             <cite class="footer-cite"
               >A 108 adam street <br />new york, NK 535022 <br />
               United States</cite
@@ -913,8 +1063,8 @@
               <strong class="footer-strong">Mail</strong> : info@company@.com
             </h5>
           </div>
-          <div class="flex-20 sm-flex-48">
-            <h4>Usefull Links</h4>
+          <div class="flex-20 sm-flex-48 m-size-flex-100 m-margin">
+            <h4 class="footer-hading">Usefull Links</h4>
             <ul>
               <li class="footer-list-item">
                 <a href="#"><i class="fas fa-angle-right"></i> Home</a>
@@ -937,8 +1087,8 @@
               </li>
             </ul>
           </div>
-          <div class="flex-20 sm-flex-48">
-            <h4>Our Service</h4>
+          <div class="flex-20 sm-flex-48 m-size-flex-100 m-margin">
+            <h4 class="footer-hading">Our Service</h4>
             <ul>
               <li class="footer-list-item">
                 <a href="#"><i class="fas fa-angle-right"></i> Web Design</a>
@@ -963,8 +1113,8 @@
               </li>
             </ul>
           </div>
-          <div class="flex-30 sm-flex-48">
-            <h4>Join Our Newsletters</h4>
+          <div class="flex-30 sm-flex-48 m-size-flex-100 m-margin">
+            <h4 class="footer-hading">Join Our Newsletters</h4>
             <p class="footer-p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vel
               quis temporibus
@@ -972,7 +1122,7 @@
             <div class="flex jutify-between relative">
               <div class="footer-btn"></div>
               <div>
-                <button class="btn subscribe-btn sm-btn">
+                <button class="btn subscribe-btn">
                   <a href="#"> Subscribe</a>
                 </button>
               </div>
@@ -980,15 +1130,15 @@
           </div>
         </div>
       </div>
-      <div class="container flex justify-between align-center sm-row sm-wrap">
-        <div class="flex-23 margin-top sm-flex-48">
+      <div class="container flex justify-between align-center sm-row m-column">
+        <div class="flex-23 margin-top sm-flex-48 m-size-flex-100">
           <small
             >&copy;Coprright Flexor : All Right Reserved <br />
             Designed By
             <span class="footer-span">Bootstrap</span>
           </small>
         </div>
-        <div class="flex-20 margin-top sm-flex-48">
+        <div class="flex-20 margin-top sm-flex-48 m-size-flex-100">
           <nav class="footer-nav">
             <a href="#"> <i class="fab fa-twitter"></i></a>
             <a href="#"> <i class="fab fa-facebook-f"></i></a>
@@ -997,7 +1147,12 @@
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </nav>
         </div>
+        
+      </div>
+      <div class="container justify-end flex">
+        <a id="top" class="bottom-btn" href="#"><i class="fas fa-angle-up"></i></a>
       </div>
     </footer>
   </body>
+  </main>
 </html>
