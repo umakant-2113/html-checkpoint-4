@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,18 +18,18 @@
     </style>
   </head>
   <body>
-    <header>
-      <div class="container justify-between flex">
+    <header class="blog-header">
+      <div class="container justify-between flex m-margin">
         <div class="flex-40">
           <h2 class="brand sm-brand"><a href="#">Flexor</a></h2>
         </div>
-        <label class="sm-bars" for="toggle"><i class="fas fa-bars"> </i></label>
+        <label class="sm-bars bars" for="toggle"><i class="fas fa-bars"> </i></label>
 
         <input id="toggle" type="checkbox" />
 
         <nav class="flex-60 sm-header-navbar">
           <ul class="flex navbar sm-column">
-            <li><a href="#"> home</a></li>
+            <li><a href="./index.html"> home</a></li>
             <li><a href="#about"> about</a></li>
             <li><a href="#service"> services</a></li>
             <li><a href="#portfolio">portfolio </a></li>
@@ -89,9 +89,9 @@
     </header>
     <main>
       <section>
-        <div class="container blog-header sm-flex-100">
-          <h5>home/Blog</h5>
-          <h2>Blog</h2>
+        <div class="container blog-hading sm-flex-100 m-padding ">
+          <h5> <a class="blog-active" href="index.html"> home</a>  /Blog</h5>
+          <h2 class="blog-h2"> <a href="#"> Blog</a> </h2>
         </div>
         <div class="container flex justify-between wrap sm-wrap">
           <div class="flex-30 margin-top blog sm-flex-100">
@@ -102,7 +102,7 @@
                 alt="blog"
               />
             </figure>
-            <article class="blog-article">
+            <article class="blog-article sm-blog-article msm-blog-article">
               <h2 class="blog-h2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
                 tempore,
@@ -131,7 +131,7 @@
                 alt="blog"
               />
             </figure>
-            <article class="blog-article">
+            <article class="blog-article sm-blog-article msm-blog-article">
               <h2 class="blog-h2">Lorem ipsum dolor sit amet consectetur.</h2>
               <nav class="blog-navbar">
                 <a href="#"><i class="fas fa-user"></i>John Doe</a>
@@ -155,7 +155,7 @@
                 alt="blog"
               />
             </figure>
-            <article class="blog-article">
+            <article class="blog-article sm-blog-article msm-blog-article">
               <h2 class="blog-h2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </h2>
@@ -181,7 +181,7 @@
                 alt="blog"
               />
             </figure>
-            <article class="blog-article">        
+            <article class="blog-article sm-blog-article msm-blog-article">        
                     <h2 class="blog-h2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a
               dicta quia,
@@ -209,7 +209,7 @@
                 alt="blog"
               />
             </figure>
-            <article class="blog-article">
+            <article class="blog-article sm-blog-article msm-blog-article">
             <h2 class="blog-h2">Lorem ipsum dolor sit amet consectetur.</h2>
             <nav class="blog-navbar">
               <a href="#"><i class="fas fa-user"></i>John Doe</a>
@@ -233,7 +233,7 @@
                 alt="blog"
               />
             </figure>
-            <article class="blog-article">
+            <article class="blog-article sm-blog-article msm-blog-article">
              <h2 class="blog-h2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </h2>
@@ -265,8 +265,8 @@
     <!-- footer start  -->
     <footer>
       <div class="footer">
-        <div class="container flex justify-between sm-wrap">
-          <div class="flex-30 sm-flex-48">
+        <div class="container flex justify-between sm-wrap msize-wrap">
+          <div class="flex-30 sm-flex-48 m-size-flex-100 m-margin">
             <h4>Flexor</h4>
             <cite class="footer-cite"
               >A 108 adam street <br />new york, NK 535022 <br />
@@ -280,7 +280,7 @@
               <strong class="footer-strong">Mail</strong> : info@company@.com
             </h5>
           </div>
-          <div class="flex-20 sm-flex-48">
+          <div class="flex-20 sm-flex-48 m-size-flex-100 m-margin">
             <h4>Usefull Links</h4>
             <ul>
               <li class="footer-list-item">
@@ -304,7 +304,7 @@
               </li>
             </ul>
           </div>
-          <div class="flex-20 sm-flex-48">
+          <div class="flex-20 sm-flex-48 m-size-flex-100 m-margin">
             <h4>Our Service</h4>
             <ul>
               <li class="footer-list-item">
@@ -330,7 +330,7 @@
               </li>
             </ul>
           </div>
-          <div class="flex-30 sm-flex-48">
+          <div class="flex-30 sm-flex-48 m-size-flex-100  m-margin">
             <h4>Join Our Newsletters</h4>
             <p class="footer-p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vel
@@ -347,15 +347,15 @@
           </div>
         </div>
       </div>
-      <div class="container flex justify-between align-center sm-row">
-        <div class="flex-23 margin-top sm-flex-48">
+      <div class="container flex justify-between align-center sm-row m-column" >
+        <div class="flex-23 margin-top sm-flex-48 m-size-flex-100">
           <small
             >&copy;Coprright Flexor : All Right Reserved <br />
             Designed By
             <span class="footer-span">Bootstrap</span>
           </small>
         </div>
-        <div class="flex-20 margin-top sm-flex-48">
+        <div class="flex-20 margin-top sm-flex-48 m-size-flex-100">
           <nav class="footer-nav">
             <a href="#"> <i class="fab fa-twitter"></i></a>
             <a href="#"> <i class="fab fa-facebook-f"></i></a>
